@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Moda</title>
+    <title>HARDCHICK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,10 +24,10 @@
             <!-- Tarjeta de Producto 1 -->
             <div class="product-item">
                 <img src="creatina300.jpg" alt="Creatina">
-                <h3>CREATINA STARNUTRITION</h3>
+                <h3>CREATINA 300g</h3>
                 <p>Ideal para inflarte como un sapo.</p>
                 <p class="price">$28.000</p>
-                <button class="buy-btn" onclick="comprarProducto('CREATINA STARNUTRITION')">Comprar</button>
+                <button class="buy-btn" onclick="addToCart('CREATINA 300g', 28.000)">Agregar al Carrito</button>
             </div>
 
             <!-- Tarjeta de Producto 2 -->
@@ -36,20 +36,26 @@
                 <h3>STRAPS</h3>
                 <p>Ideal para cargar pesado y al fallo.</p>
                 <p class="price">$10.000</p>
-                <button class="buy-btn" onclick="comprarProducto('STRAPS')">Comprar</button>
+                <button class="buy-btn" onclick="addToCart('STRAPS', 10.000)">Agregar al Carrito</button>
             </div>
 
             <!-- Tarjeta de Producto 3 -->
             <div class="product-item">
                 <img src="proteina908.jpg" alt="Proteina">
-                <h3>PROTEINA STARNUTRITION</h3>
+                <h3>PROTEINA 908g</h3>
                 <p>La mejor prote del pais.</p>
-                <p class="price">$19.99</p>
-                <button class="buy-btn" onclick="comprarProducto('PROTEINA STARNUTRITION')">Comprar</button>
+                <p class="price">$30.000</p>
+                <button class="buy-btn" onclick="addToCart('PROTEINA 908g', 30.000)">Agregar al Carrito</button>
             </div>
         </div>
     </section>
-
+    <!-- Contenedor del carrito de compras -->
+    <aside class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+    </aside>
     <footer>
         &copy; 2024 Tienda de Moda. Todos los derechos reservados.
     </footer>
@@ -57,4 +63,4 @@
     <!-- Archivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
-</html>
+</html
