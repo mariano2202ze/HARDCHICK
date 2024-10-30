@@ -76,3 +76,8 @@ function clearCart() {
     cartTotal = 0.0;
     updateCartDisplay();
 }
+// Alternar visibilidad del carrito
+function toggleCartVisibility() {
+    const cartContainer = document.getElementById("cart-container");
+    cartContainer.classList.toggle("visible");
+}

@@ -12,12 +12,17 @@
             <img src="logo.png" alt="Logo de Mi Tienda">
         </h1>
     </header>
+
+    <button id="cart-toggle-btn" onclick="toggleCartVisibility()">
+        🛒
+    </button>
+    
     
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Catálogo</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="catálogo.html">Catálogo</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
     <section>
@@ -52,17 +57,16 @@
         </div>
     </section>
     <!-- Contenedor del carrito de compras -->
-    <aside class="cart">
+    <aside class="cart" id="cart-container">
         <h2>Carrito de Compras</h2>
         <ul id="cart-items"></ul>
         <p>Total: $<span id="cart-total">0.00</span></p>
         <button onclick="clearCart()">Vaciar Carrito</button>
     </aside>
+    
     <footer>
         &copy; 2024 Tienda de Moda. Todos los derechos reservados.
     </footer>
 
-    <!-- Archivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
-</html
