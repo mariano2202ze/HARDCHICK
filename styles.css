@@ -259,6 +259,9 @@ h2 {
 .contact-info p {
     margin: 0.5rem 0;
 }
+section {
+    padding-bottom: 15rem; /* Espacio extra para que el footer quede más abajo */
+}
 footer {
     background-color: #333; /* Mismo color que el header */
     color: #fff;
